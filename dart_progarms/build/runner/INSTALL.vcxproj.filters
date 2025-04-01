@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chinmay panchal\AndroidStudioProjects\Flutter_projects\dart_progarms\build\CMakeFiles\689bb0fd1518437c273afec919354983\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{94CC61AE-E87D-3AB3-A063-D860754A1BB4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
