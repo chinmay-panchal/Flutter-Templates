@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "521403190755",
+    "project_id": "discuss-hub-project",
+    "storage_bucket": "discuss-hub-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521403190755:android:6a39f82afc89a43b6da4d6",
+        "android_client_info": {
+          "package_name": "com.example.discuss_hub_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521403190755-r9hu52c1mmmidsmu49l7ftj5u2oj5cse.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.discuss_hub_project",
+            "certificate_hash": "584a52c49af146c58032e6912c937ab4811c53c5"
+          }
+        },
+        {
+          "client_id": "521403190755-kpdaebcb97u75dp7bfgskhfntog1e8lj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzaqPLrCTDFl37ye63-x6q7PpxH2fmbgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521403190755-kpdaebcb97u75dp7bfgskhfntog1e8lj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "521403190755-hm4f11f9uqd5lt4oat8snd36up56g9sr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.discussHubProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
