@@ -1,0 +1,94 @@
+import 'package:chopper/chopper.dart';
+
+// This is required for code generation
+part 'user_service.chopper.dart';
+
+@ChopperApi(baseUrl: "/users") // Only the endpoint (not full URL)
+abstract class UserService extends ChopperService {
+
+  static UserService create([ChopperClient? client]) => _$UserService(client);
+
+  @GET()
+  Future<Response> getUsers(@Query('page') int page);
+
+  @POST()
+  Future<Response> createUsers(@Body() Map<String, dynamic> body);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import 'package:chopper/chopper.dart';
+
+// // This is necessary for code generation
+// part 'user_service.chopper.dart';
+
+// @ChopperApi() // Base URL for this service
+// abstract class UserService extends ChopperService {
+//    static UserService create([ChopperClient? client]) => _$UserService(client);
+//   @GET(
+//     path: 'user'
+//   )
+//   Future<Response> getUsers(@Query('page') int page);
+
+//   @POST()
+//   Future<Response> createUser(@Body() Map<String, dynamic> body); // POST request
+
+//   // Factory method
+ 
+// }
+
+
+import 'package:chopper/chopper.dart';
+import 'user_service.dart';
+
+class ApiClient {
+  static final ChopperClient client = ChopperClient(
+    baseUrl: Uri.parse("https://reqres.in/api"), // Base URL for all API calls
+    services: [
+      UserService.create(),
+    ],
+    converter: JsonConverter(), // Auto-converts JSON
+  );
+
+  static UserService get userService => client.getService<UserService>();
+}
+
+import 'api_client.dart';
+
+void main() async {
+  // final response = await ApiClient.userService.getUsers(2);
+  final response = await ApiClient.userService.createUsers({
+    "name": "morpheus",
+    "job": "leader",
+  });
+
+  if (response.isSuccessful) {
+    print("Users: ${response.body}");
+  } else {
+    print("GET Error: ${response.statusCode}");
+  }
+}
+
+https://fargo-api.datausa.io/cubes
